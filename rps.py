@@ -4,7 +4,11 @@
 
 import random
 
+while True:
 user_action = input("Enter throw (rock, paper, scissors): ")
+    if user_action == "quite":
+        print("Thank you for playing the game")
+        break 
 ai_action = random.choice(["rock", "paper", "scissors"])
 
 print(f"\nYou chose {user_action}, AI chose {ai_action}.\n")
